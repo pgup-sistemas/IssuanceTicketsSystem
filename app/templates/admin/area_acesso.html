@@ -106,7 +106,7 @@
             <div class="icon"><i class="bi bi-printer"></i></div>
             <h5 class="fw-bold">Emissor de Senhas</h5>
             <p>Permite testar a emissão de senhas como se estivesse no totem físico.</p>
-            <a href="{{ url_for('emissao.emitir') }}" class="btn btn-primary w-100">Acessar Emissor</a>
+            <a href="{{ url_for('emissao.emitir') }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">Acessar Emissor</a>
           </div>
         </div>
         <div class="col-md-4 d-flex">
@@ -114,7 +114,7 @@
             <div class="icon"><i class="bi bi-person-square"></i></div>
             <h5 class="fw-bold">Painel do Operador</h5>
             <p>Simule o acesso do operador para chamar senhas e visualizar a fila em tempo real.</p>
-            <a href="{{ url_for('operator.painel') }}" class="btn btn-success w-100">Acessar Painel do Operador</a>
+            <a href="{{ url_for('operator.painel') }}" target="_blank" rel="noopener noreferrer" class="btn btn-success w-100">Acessar Painel do Operador</a>
           </div>
         </div>
         <div class="col-md-4 d-flex">
@@ -122,7 +122,15 @@
             <div class="icon"><i class="bi bi-gear"></i></div>
             <h5 class="fw-bold">Acesso Administrativo</h5>
             <p>Entre na área administrativa completa para testar todas as funcionalidades do sistema.</p>
-            <a href="{{ url_for('admin.dashboard') }}" class="btn btn-warning w-100">Acessar Administração</a>
+            <a href="{{ url_for('admin.dashboard') }}" target="_blank" rel="noopener noreferrer" class="btn btn-warning w-100">Acessar Administração</a>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="access-card animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="icon"><i class="bi bi-tv"></i></div>
+            <h5 class="fw-bold">Monitor de TV</h5>
+            <p>Abra o painel público para exibir as chamadas em uma TV.</p>
+            <a href="{{ url_for('public.monitor') }}" target="_blank" rel="noopener noreferrer" class="btn btn-info w-100">Abrir Monitor</a>
           </div>
         </div>
       </div>
